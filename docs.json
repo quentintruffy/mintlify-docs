@@ -1,19 +1,10 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "linden",
-  "styling": {
-    "eyebrows": "section"
-  },
   "name": "Mint Starter Kit",
   "search": {
-    "prompt": "Search... eeee"
+    "prompt": "Search..."
   },
-  "redirects": [
-    {
-      "source": "/calendar",
-      "destination": "/calendar/introduction"
-    }
-  ],
   "colors": {
     "primary": "#00A7F9",
     "light": "#32CCFF",
@@ -27,64 +18,75 @@
     "tabs": [
       { 
         "tab": "Knowledge",
-        "hidden": false,
         "groups": [
           {
             "group": "Essentials",
+            "root": "/knowledge",
             "pages": [
               "knowledge"
             ]
           }
         ]
       },
-      {
-        "tab": "Calendar Guides",
-        "hidden": true,
+      { 
+        "tab": "Calendar Top",
         "groups": [
           {
-            "group": "Calendar",
-            "pages": [
-              {
-                "group": "Introduction  dffg ",
-                "pages": [
-                  "calendar/introduction"
-                ]
-              }
-            ]
+            "group": "Essentials",
+            "root": "/calendar",
+            "pages": [{
+              "group": "Introduction",
+              "root": "/mona",
+              "pages": [
+                "calendar/introduction", "calendar/api"
+              ]
+            }]
+          }
+        ]
+      },
+      { 
+        "tab": "Nomad Top",
+        "groups": [
+          {
+            "group": "Essentials",
+            "root": "/nomad",
+            "pages": [{
+              "group": "Introduction",
+              "root": "/nomad",
+              "pages": [
+                "nomad/introduction", "nomad/api"
+              ]
+            }]
           }
         ]
       },
       {
         "tab": "Mona Guides",
-        "hidden": true,
         "groups": [
           {
-            "group": "Mona",
-            "pages": [
-              {
-                "group": "Introduction Guide",
-                "pages": [
-                  "mona/introduction"
-                ]
-              }
-            ]
+            "group": "Writing Content",
+            "pages": [{
+              "group": "Introduction",
+              "root": "/mona",
+              "pages": [
+                "mona/introduction"
+              ]
+            }]
           }
         ]
       },
       {
-        "tab": "Mona Guides API",
-        "hidden": true,
+        "tab": "Mona API",
         "groups": [
           {
-            "group": "Monas",
-            "pages": [
-              {
-                "group": "Introduction API",
-                "pages": [
-                  "mona/api"
-                ]
-              }
-            ]
+            "group": "Writing Content",
+            "pages": [{
+              "group": "API",
+              "root": "/mona",
+              "pages": [
+                "mona/api"
+              ]
+            }]
           }
         ]
       }
@@ -97,12 +99,24 @@
           "href": "https://www.nomadia-group.com/"
         }
       ],
+      "languages": [
+        {
+          "default": true,
+          "language": "fr",
+          "href": "https://fr.mintlify.com"
+        },
+        {
+          "default": false,
+          "language": "en",
+          "href": "https://fr.mintlify.com"
+        }
+      ],
       "dropdowns": [
         {
           "dropdown": "Getting Started",
-          "description": "Set uo your project",
+          "description": "Set up your project",
           "icon": "book-open",
-          "href": "https://www.nomadia-group.com/"
+          "href": "http://localhost:3000/"
         },
         {
           "dropdown": "API Integration",
