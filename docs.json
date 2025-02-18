@@ -1,17 +1,33 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "linden",
+  "styling": {
+    "eyebrows": "section"
+  },
   "name": "Mint Starter Kit",
+  "search": {
+    "prompt": "Search... eeee"
+  },
+  "redirects": [
+    {
+      "source": "/calendar",
+      "destination": "/calendar/introduction"
+    }
+  ],
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#00A7F9",
+    "light": "#32CCFF",
+    "dark": "#00A7F9"
+  },
+  "background": {
+    "image": "/public/background.png"
   },
   "favicon": "public/favicon.svg",
   "navigation": {
     "tabs": [
-      {
-        "tab": "Guides",
+      { 
+        "tab": "Knowledge",
+        "hidden": false,
         "groups": [
           {
             "group": "Essentials",
@@ -26,11 +42,10 @@
         "hidden": true,
         "groups": [
           {
-            "group": "Mona",
-            "root": "/calendar",
+            "group": "Calendar",
             "pages": [
               {
-                "group": "Introduction",
+                "group": "Introduction  dffg ",
                 "pages": [
                   "calendar/introduction"
                 ]
@@ -45,9 +60,30 @@
         "groups": [
           {
             "group": "Mona",
-            "root": "/mona",
             "pages": [
-              "mona/introduction"
+              {
+                "group": "Introduction Guide",
+                "pages": [
+                  "mona/introduction"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Mona Guides API",
+        "hidden": true,
+        "groups": [
+          {
+            "group": "Monas",
+            "pages": [
+              {
+                "group": "Introduction API",
+                "pages": [
+                  "mona/api"
+                ]
+              }
             ]
           }
         ]
@@ -56,26 +92,36 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Site officiel",
+          "icon": "earth-europe",
+          "href": "https://www.nomadia-group.com/"
+        }
+      ],
+      "dropdowns": [
+        {
+          "dropdown": "Getting Started",
+          "description": "Set uo your project",
+          "icon": "book-open",
+          "href": "https://www.nomadia-group.com/"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "dropdown": "API Integration",
+          "description": "Set uo your project",
+          "icon": "plug",
+          "href": "https://www.nomadia-group.com/"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "dropdown": "Changelog",
+          "description": "Update and changes",
+          "icon": "list-check",
+          "href": "https://www.nomadia-group.com/"
         }
       ]
     }
   },
   "logo": {
-    "light": "/public/assets/light.svg",
-    "dark": "/public/assets/dark.svg"
+    "light": "/public/assets/dark-logo.svg",
+    "dark": "/public/assets/light-logo.svg"
   },
   "navbar": {
     "links": [
@@ -92,9 +138,10 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/NomadiaGroup",
+      "youtube": "https://www.youtube.com/c/NOMADIA-GROUP",
+      "facebook": "https://www.facebook.com/Nomadia.group",
+      "linkedin": "https://www.linkedin.com/company/nomadia-group/"
     }
   }
 }
