@@ -20,6 +20,37 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Calendar Guides",
+        "hidden": true,
+        "groups": [
+          {
+            "group": "Mona",
+            "root": "/calendar",
+            "pages": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  "calendar/introduction"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Mona Guides",
+        "hidden": true,
+        "groups": [
+          {
+            "group": "Mona",
+            "root": "/mona",
+            "pages": [
+              "mona/introduction"
+            ]
+          }
+        ]
       }
     ],
     "global": {
