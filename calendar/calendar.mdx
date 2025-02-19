@@ -1,0 +1,146 @@
+---
+title: "L'onglet Calendrier"
+description: "Cet onglet est composé de quatre zones distinctes (**Ressources** – **Activités** – **Calendrier/Gantt** – **Carte**) affichables ou non et redimensionnables grâce aux poignées horizontales et verticales.
+
+Il permet à l’utilisateur d’afficher et de gérer les ressources et les activités ainsi que leurs propriétés et leurs contraintes respectives.
+"
+---
+
+## Généralités sur l'UI
+
+- Les zones **Ressources** et **Activités** sont toujours à l’affichage alors que **Calendrier/Gantt** et **Carte** sont affichables ou non.
+- La sélection d’une ou plusieurs ressources met à jour la zone « **Calendrier/Gantt** » sur la période active.
+- En passant le curseur sur une activité de la zone « **Calendrier/Gantt** » ou de la **Carte**, une fenêtre d’information contextuelle éphémère s’affiche.
+- Le clic souris sur une activité dans l’une des zones **Calendrier/Gantt**, **Activités** ou **Carte** valorise/surligne cette activité dans les trois zones.
+
+### Les interrupteurs de l'affichages
+
+- Passer du calendrier au Gantt <img width = "150" src="/public/assets/calendar/calendar-ganttIcon.png"/>
+- Activer / Désactiver le Calendrier ou Gantt <img width = "75" src="/public/assets/calendar/calendar-CalendartoGantt.png"/>
+- Activer / Désactiver la carte <img width = "75" src="/public/assets/calendar/calendar-CalendartoMap.png"/>
+
+### La période à afficher
+
+Cliquez sur le bouton « Période »
+Sélectionnez la date de début et la date de fin dans le calendrier
+![PeriodeButtonInterface](/public/assets/calendar/calendar-periodebutton.png)
+Sélectionnez : Jour
+
+<img width="500" src="/public/assets/calendar/calendar-daybutton.png" />
+Sélectionnez : Semaine{" "}
+
+<img width="500" src="/public/assets/calendar/calendar-weekbutton.png" />
+
+Sélectionnez : Mois
+
+<img width="500" src="/public/assets/calendar/calendar-monthbutton.png" />
+Les flèches permettent de décaler la période sélectionnée : Période, Jour, Semaine,
+Mois.
+<img width="100" src="/public/assets/calendar/calendar-arrowbutton.png" />
+
+### Le clic droit de la souris
+
+Sur une activité dans la zone « Calendrier/Gantt » ou sur l’icône d’une seule activité dans la zone Carte, il provoque l’affichage d’un menu contextuel.
+
+<img width="500" src="/public/assets/calendar/gantt-rightcliconactivity.png" />
+
+Sur une icône d’activités groupées, dans la zone Carte, le clic droit permet de lister les activités situées au même endroit
+
+<img width="250" src="/public/assets/calendar/map-rightcliconactivity.png" />
+
+Sur une icône de ressource, dans la zone Carte, il provoque l’affichage d’un menu contextuel.
+
+<img width="500" src="/public/assets/calendar/map-rightcliconresource.png" />
+
+Sur la journée de travail d’une ressource de la zone « Calendrier/Gantt », il provoque l’affichage d’un menu contextuel d’édition ou de suppression :
+
+<img width="500" src="/public/assets/calendar/gantt-rightcliconshift.png" />
+
+### Tri des données
+
+Dans les zones **Ressources** et **Activités**, les données des tableaux peuvent être triées dans un ordre croissant ou décroissant en cliquant sur l’entête de la colonne. A gauche du nom de la colonne, une flèche verticale vers le haut ou le bas indique le sens du tri.
+
+Le premier clic sur le nom de la colonne provoque le tri de A à Z.
+
+<img width="350" src="/public/assets/calendar/resource-filterbynameAZ.png" />
+
+Le deuxième clic sur le nom de la colonne provoque le tri de Z à A
+
+<img width="350" src="/public/assets/calendar/resource-filterbynameZA.png" />
+
+### Filtre des données
+
+Dans les zones **Ressources** et **Activités**, les données des tableaux peuvent être filtrées par une chaîne de caractères ou par un critère existant. En passant le curseur de la souris sur l’entête de la colonne, une icône de trois petits traits horizontaux indique la possibilité d’affiche la liste des choix du filtre.
+
+<img width="250" src="/public/assets/calendar/resource-filterId.png" />
+
+Le clic sur cette icône affiche cette liste de choix, afin de filtrer ces données
+:
+
+<img width="300" src="/public/assets/calendar/resource-filteredId.png" />
+Le résultat du filtre provoque la mise à jour des zones relatives, c’est-à-dire qu’un
+filtre dans la zone **Ressources** affecte la zone **Calendrier/Gantt** et la zone
+**Carte**
+<img
+  width="350"
+  src="/public/assets/calendar/calendar-fewresourcefiltredonmap.png"
+/>
+
+L’entête de la colonne est complété par l’icône « Filtre »
+
+<img width="250" src="/public/assets/calendar/resource-filterheader.png" />
+
+<tr>
+  <td
+    style={{
+      padding: "10px",
+      textAlign: "center",
+      verticalAlign: "top",
+      width: "50px",
+    }}
+  >
+    <img
+      style={{ width: "35px" }}
+      noZoom
+      src="/public/assets/Icons/WarningIcon.png"
+    />
+  </td>
+  <td style={{ padding: "10px" }}>
+    Attention - En fonction des données de la colonne, les critères de choix
+    sont différents.
+  </td>
+</tr>
+
+### Suppression des tris et des filtres
+
+Dans les entêtes des zones **Ressources** et **Activités**, un clic sur l’icône « Gomme » efface les tris ET les filtres existants.
+
+<img width="350" src="/public/assets/calendar/resource-erasefilters.png" />
+
+### L'ordre des colonnes
+
+Dans les zones **Ressources** et **Activités**, l’ordre des colonnes est modifiable par simple « Glisser Coller » à l’aide la souris.
+
+<img
+  width="350"
+  src="/public/assets/calendar/resource-reorganizingcolumn.png"
+/>
+
+### Aide à la planification
+
+#### Aide à la planification depuis l’activité
+
+L’aide à la planification active permet de déterminer la meilleure ressource à allouer à une activité en fonction critères suivants :
+
+- **Les compétences**. Si la ressource à la compétence requise par l’activité, il sera indiqué X compétences/X compétences et le symbole sera vert :
+  {" "}
+  {" "}
+  <img width="100" src="/public/assets/calendar/resource-helpplanifok.png" />
+  Dans le cas contraire le symbole sera rouge et les compétences ne seront pas correspondantes
+  <img width="100" src="/public/assets/calendar/resource-helpplanifko.png" />A
+  gauche les compétences de la ressource, à droite celles requises par
+  l’activité.
+- **La distance** à vol d’oiseau entre l’adresse de départ de la ressource et l’adresse de l’activité.
+- **Le nombre** de shifts (planning ou journée de travail) recoupant le SLA de l’activité
+
+Pour utiliser l’aide à la planification, il faut se rendre dans la zone Ressource et appuyer sur le bouton d’aide à la planification active puis sélectionner des activités ce qui triera les ressources de la plus pertinente à la moins pertinente dans l’onglet des Ressources.
