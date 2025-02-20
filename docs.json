@@ -11,9 +11,12 @@
     "dark": "#00A7F9"
   },
   "background": {
-    "image": "/public/background.png"
+    "image": {
+      "dark": "/public/background.png",
+      "light": "/public/background2.jpg"
+    }
   },
-  "favicon": "public/favicon.svg",
+  "favicon": "public/favicon.png",
   "navigation": {
     "tabs": [
       {
@@ -27,30 +30,25 @@
         ]
       },
       {
-        "tab": "Calendar Top",
+        "tab": "Calendar Guide",
         "groups": [
           {
-            "group": "Essentials",
+            "group": "Introduction",
             "root": "/calendar",
-            "pages": [
-              {
-                "group": "Introduction",
-                "root": "/mona",
-                "pages": [
-                  "calendar/introduction",
-                  "calendar/connexion",
-                  "calendar/calendar"
-                ]
-              }
-            ]
+            "pages": ["calendar/introduction", "calendar/connexion"]
+          },
+          {
+            "group": "Calendrier",
+            "root": "/calendar",
+            "pages": ["calendar/calendar"]
           }
         ]
       },
       {
-        "tab": "Nomad Top",
+        "tab": "Nomad Guide",
         "groups": [
           {
-            "group": "Essentials",
+            "group": " ",
             "root": "/nomad",
             "pages": [
               {
@@ -66,7 +64,7 @@
         "tab": "Mona Guides",
         "groups": [
           {
-            "group": "Writing Content",
+            "group": " ",
             "pages": [
               {
                 "group": "Introduction",
@@ -81,7 +79,7 @@
         "tab": "Mona API",
         "groups": [
           {
-            "group": "Writing Content",
+            "group": " ",
             "pages": [
               {
                 "group": "API",
