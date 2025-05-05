@@ -1,0 +1,105 @@
+---
+title: "La partie Ressource"
+description: "Cette zone sert à sélectionner les ressources pour lesquelles l’utilisateur veut :"
+---
+
+<img src="/public/assets/calendar/resource-globalView.png" />
+
+- Gérer/modifier leurs paramètres, critères ou plannings
+- Visualiser, valider ou modifier la/les tournées en cours
+- Aider à la planification d’activités rejetées
+- Appliquer un même planning à un ensemble de ressources sélectionnées
+
+## Les différentes fonctions de la partie
+
+- Le nombre de ressources à l’affichage :
+  <img
+    width="250px"
+    src="/public/assets/calendar/resource-resourceNumber.png"
+  />
+- La création de planning multi ressources :
+
+  <img src="/public/assets/calendar/resource-MultiplanningResource.png" />
+  Permet de créer/supprimer simultanément un planning avec « pause » et « indisponibilité
+  » pour plusieurs ressources sélectionnées :
+
+  <img src="/public/assets/calendar/resource-resourceDetails.png" />
+
+Pour les options de « Suppression planning », « Création indisponibilités » et « Suppression
+indisponibilités », se reporter un peu plus loin dans ce document.
+
+- Localisez la ressource sur la carte :
+  <img src="/public/assets/calendar/resource-localisationButton.png" />
+- Visualisez/Editez tous les paramètres de la ressource :
+  <img src="/public/assets/calendar/resource-detailButton.png" />
+- La sélection : couleur bleu pâle :
+  <img src="/public/assets/calendar/resource-selectedline.png" />
+
+## Ajout de secteur temporaire sur le planning
+
+<img
+  style={{ width: "35px" }}
+  noZoom
+  src="/public/assets/Icons/WarningIcon.png"
+/>
+Uniquement disponible pour les environnements avec le moteur 7OPWAY.
+<BR />
+Dans MonaAdmin se trouve un paramètre dans Serveur/CalendarApiConnector. A activer
+seulement si l’utilisateur a le moteur interne.
+
+<img src="/public/assets/mona/Mona-EngineOn.png" />
+
+Dans le bas du formulaire de saisie d’un planning se trouve un nouveau champ.
+
+<img src="/public/assets/calendar/resource-planningSector.png" />
+Ce champ permet d’ajouter un ou plusieurs secteur(s) sur le planning.
+<img src="/public/assets/calendar/resource-addSector.png" />
+Quand on applique un secteur cela se présente ainsi :
+<img src="/public/assets/calendar/resource-sectorAdded.png" />
+Lors de la modification d’un planning, on peut aussi modifier un secteur.
+<BR />
+Dans l’onglet “Informations” d’une ressource, on a le résumé des secteurs.
+<img src="/public/assets/calendar/resource-sectorList.png" />
+
+<img
+  style={{ width: "35px" }}
+  noZoom
+  src="/public/assets/Icons/WarningIcon.png"
+/>
+Les secteurs ajoutés à partir du planning ne seront pas modifiable dans cet onglet.
+Ils sont signalés par un calendrier et un popup.
+
+## Sélectionner dans la zone
+
+Pour une sélection unitaire, cliquez sur la ligne de la ressource concernée. Pour la sélection
+multiple combinez le clic souris avec la touche « Maj » et/ou la touche « Ctrl ». Chaque ligne
+sélectionnée prend une couleur bleu pale. La sélection provoque la mise à jour des zone
+Calendrier/Gantt et Carte.
+
+<BR />
+ATTENTION : Le filtre sert à afficher ou non les ressources mais pas à les sélectionner.
+
+## Paramètres de la ressource
+
+Cliquez sur l’icône <img src="/public/assets/Icons/addResource.png" /> fait apparaitre cette interface :
+
+<img src="/public/assets/calendar/resource-detailsOverview.png" />
+
+## Le bilan
+
+- Donne les informations générales relatives à la ressource.
+- Modifie les adresses de départ et d’arrivée en cliquant sur une liste d’adresses existantes.
+
+## Les contacts
+
+Liste du/des contacts liés à la ressource.
+
+La création, la suppression ou la modification d’un contact se fait dans le Resource Manager.
+
+<img src="/public/assets/calendar/resource-contact.png" />
+
+## Les activités
+
+- Liste de toutes les activités allouées, sur la période active, à la ressource.
+
+<img src="/public/assets/calendar/resource-activityList.png" />

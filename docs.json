@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "linden",
+  "theme": "mint",
   "name": "Mint Starter Kit",
   "search": {
     "prompt": "Search..."
@@ -41,6 +41,11 @@
             "group": "Calendrier",
             "root": "/calendar",
             "pages": ["calendar/calendar"]
+          },
+          {
+            "group": "Ressource",
+            "root": "/calendar",
+            "pages": ["calendar/resource"]
           }
         ]
       },
