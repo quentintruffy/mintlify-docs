@@ -35,17 +35,36 @@
           {
             "group": "Introduction",
             "root": "/calendar",
-            "pages": ["calendar/introduction", "calendar/connexion"]
+            "pages": ["calendar/introduction"]
           },
           {
-            "group": "Calendrier",
+            "group": "Onglet Cockpit",
             "root": "/calendar",
-            "pages": ["calendar/calendar"]
+            "pages": ["calendar/cockpit"]
           },
           {
-            "group": "Ressource",
+            "group": "Onglet Calendrier",
             "root": "/calendar",
-            "pages": ["calendar/resource"]
+            "pages": [
+              "calendar/calendar",
+              "calendar/resource",
+              "calendar/activity"
+            ]
+          },
+          {
+            "group": "Onglet Activité",
+            "root": "/calendar",
+            "pages": ["calendar/activity-tab"]
+          },
+          {
+            "group": "Onglet Indicateur",
+            "root": "/calendar",
+            "pages": ["calendar/indicator"]
+          },
+          {
+            "group": "Onglet Archive",
+            "root": "/calendar",
+            "pages": ["calendar/archives"]
           }
         ]
       },
