@@ -1,0 +1,104 @@
+---
+title: "La partie Cartographie"
+description: "Cette zone affiche les informations relatives aux activités planifiées et au tournées des ressources. Les modes d’affichage sont « Tournée » et « Recherche »."
+---
+
+{" "}
+
+<img src="/public/assets/calendar/calendar-map-overview.png" />
+
+## L'interface utilisateur dans la zone carte
+
+### Zoom avant et arrière
+
+<img src="/public/assets/calendar/calendar-map-zoom.png" />
+
+Un clic provoque le zoom choisit.
+
+<BR />
+L’utilisation de la molette de la souris provoque aussi le zoom entrant ou sortant
+en fonction du sens de rotation.
+
+### Le panoramique
+
+Pour se déplacer dans la zone, il faut maintenir le clic gauche et faire glisser la souris dans la direction voulue.
+
+### Le mode tournée
+
+<img src="/public/assets/calendar/calendar-map-buttons.png" />
+
+Ce mode permet de visualiser les tournées des ressources sélectionnées dans la zone « Ressources » ainsi que les activités, sur la période choisie.
+
+### Le mode recherche
+
+Permet de filtrer les activités contenues dans un cercle de rayon variable (1 km par défaut), centré sur un critère (adresse, CP, ville) donné.
+
+<img src="/public/assets/calendar/calendar-map-researchbutton.png" />
+
+<img src="/public/assets/calendar/calendar-map-researcharea.png" />
+
+Les activités situées dans la zone de la recherche peuvent être appliquer sur le filtre de la zone Activités en sélectionnant l’option "Appliquer le filtre sur le tableau":
+
+<img src="/public/assets/calendar/calendar-map-applyResearch.png" />
+
+Le résultat de la recherche peut être effacer en sélectionnant l’option "Effacer la recherche":
+
+<img src="/public/assets/calendar/calendar-map-clearResearch.png" />
+
+### La sortie de la carte
+
+Il est possible de pouvoir sortir la carte et la disposer dans un nouvel écran.
+
+<br />
+Pour cela il suffit d’appuyer sur l’icône
+<img src="/public/assets/calendar/calendar-map-mapOnScreen.png" />
+Au clic il sera demandé si le navigateur à le droit d’afficher la carte dans une
+autre page. En confirmant, la carte sera dans une nouvelle page du navigateur.{" "}
+
+<table>
+  <tr>
+    <td
+      style={{
+        padding: "10px",
+        textAlign: "center",
+        verticalAlign: "top",
+        width: "50px",
+      }}
+    >
+      <img
+        style={{ width: "35px" }}
+        noZoom
+        src="/public/assets/Icons/WarningIcon.png"
+      />
+    </td>
+    <td style={{ padding: "10px" }}>
+      Pour activer cette option, il faut au préalable activer un paramètre dans
+      MonaAdmin.
+    </td>
+  </tr>
+</table>
+
+### Recentrer
+
+Ceci recentre la carte dans sa zone sur un point qui est proche du barycentre des positions des ressources et des activités présentes.
+
+<img src="/public/assets/calendar/calendar-map-centerButton.png" />
+## Les autres fonctions
+
+### Grouper/Dégrouper les icones d'activités
+
+En fonction du zoom appliqué et de la position de l’interrupteur, les icones des activités se regroupent avec leur nombre affiché au centre de l’icône.
+
+<img src="/public/assets/calendar/calendar-map-ungroupedActivities.png" />
+
+<img src="/public/assets/calendar/calendar-map-groupedActivities.png" />
+
+### Les multi-activités
+
+Lorsque plusieurs activités sont à un même lieu, un chiffre affichera le nombre d’activités se trouve à cet endroit
+
+<img src="/public/assets/calendar/calendar-map-multiactivities.png" />
+
+En faisant un clic gauche, avec le regroupement des activités sur la carte, cela fera apparaître les activités dans une liste déroulante.
+
+<img src="/public/assets/calendar/calendar-map-multiactivitieslist.png" />

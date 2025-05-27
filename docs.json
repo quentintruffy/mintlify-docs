@@ -48,7 +48,9 @@
             "pages": [
               "calendar/calendar",
               "calendar/resource",
-              "calendar/activity"
+              "calendar/activity",
+              "calendar/shift",
+              "calendar/map"
             ]
           },
           {
