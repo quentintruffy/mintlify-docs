@@ -2,3 +2,148 @@
 title: "Edition des activités en masse"
 description: "Cet onglet permet de faire des actions en masse sur plusieurs activités"
 ---
+
+## Vue générale
+
+Dans cette partie sera expliqué la partie "Activités", ainsi que ses sous catégories, à savoir :
+
+- Fixation
+- Préférence
+- SLAs
+- Transition de statuts
+- Figeage
+
+<BR />
+Cette partie sert à faire des actions de masses sur plusieurs activités en même temps.
+<BR />
+Elle est composé d'un tableau avec les activités, d'une carte et d'un tableau regroupant
+les onglets mentionnés plus haut.
+
+<img src="/public/assets/calendar/calendar-activitiesTab-overview.png" />
+
+Dans le tableau des activités, il est possible de créer de nouvelles activités.
+Qu'une activités ou plus soient sélectionnées, l'icône + sera toujours disponible pour créer une activité.
+
+<img src="/public/assets/calendar/calendar-activitiesTab-CreatenewActivity.png" />
+<img src="/public/assets/calendar/calendar-activitiesTab-CreatenewActivityOneActivitySelected.png" />
+
+## Onglet de fixation
+
+Permet, après avoir sélectionné plusieurs activités, de les fixer à une ressource.
+
+### La fixation
+
+Pour cela il faut sélectionner deux ou plusieurs activités, puis dans l'onglet "Fixation" sélectionner la ressource voulue.
+
+<img src="/public/assets/calendar/calendar-activitiesTab-fixresourceNoresourceSelected.png" />
+<img src="/public/assets/calendar/calendar-activitiesTab-fixresourceList.png" />
+Une fois fait, au clic du bouton "Fixer la ressource",
+<img src="/public/assets/calendar/calendar-activitiesTab-fixresourceButton.png" /> un
+message de confirmation s'affichera avec un récapitulatif des activités
+sélectionnées et la ressource à laquelle elle seront affectées.
+<img src="/public/assets/calendar/calendar-activitiesTab-fixresourceConfirmationmessage.png" />
+
+Les activités sont affectées à la ressource voulue.
+
+### La défixation
+
+Il est également possible de défixer la ou les ressources de plusieurs activités.
+Pour cela, la manipulation est similaire à celle de la fixation.
+Il faut sélectionner deux ou plusieurs activités, puis cliquer sur le bouton "Défixer la ressource"
+
+<img src="/public/assets/calendar/calendar-activitiesTab-unfixresourceButton.png" />
+
+Lorsque cela est fait, un message de confirmation s'affichera pour récapituler les actions qui seront faites.
+
+<img src="/public/assets/calendar/calendar-activitiesTab-unfixresourceConfirmationmessage.png" />
+
+<table>
+  <tr>
+    <td
+      style={{
+        padding: "10px",
+        textAlign: "center",
+        verticalAlign: "top",
+        width: "50px",
+      }}
+    >
+      <img
+        style={{ width: "35px" }}
+        noZoom
+        src="/public/assets/Icons/WarningIcon.png"
+      />
+    </td>
+    <td style={{ padding: "10px" }}>
+      Dans certains cas, la défixation n'est pas possible!
+    </td>
+  </tr>
+</table>
+Par exemple dans le cas où les activités sélectionnées ont un statut dont la ressource
+est impérative (exemple le statut 30).
+<BR />
+Un message s'affichera pour le préciser.
+
+<img src="/public/assets/calendar/calendar-activitiesTab-unfixresourcestatuttoohigh.png" />
+
+## Onglet de Préférence
+
+Cet onglet permet d'affecter à plusieurs activités des préférences pour certaines ressources.
+La préférence permet au moteur d'optimisation de préférer une ressource donnée par rapport à une autre.
+
+<img src="/public/assets/calendar/calendar-activitiesTab-preferenceOverview.png" />
+
+Plus la valeur sera proche de 1, plus le moteur essaiera de prioriser la ou les ressources concernées.
+
+<BR />
+En revanche, plus la valeur est proche de 0, plus le moteur essaiera d'éviter de
+planifier sur ces ressources.
+
+## Les SLAs
+
+Cet onglet permet d'attribuer à plusieurs activités un nouvel SLA.
+
+<img src="/public/assets/calendar/calendar-activitiesTab-SLAOverview.png" />
+
+## Les transitions de statuts
+
+Cet onglet permet de changer le statut de plusieurs activités seulement dans la mesure de ceux qui ne nécessitent pas de fixation de date et de ressource.
+
+<img src="/public/assets/calendar/calendar-activitiesTab-StatusTransition.png" />
+Par exemple, une activité au statut 0 ne pourra pas passer au statut 30 dont l'une
+des obligations est d'avoir une date et une ressource de fixée.
+<BR />
+Néanmoins, le contraire est possible. Passer d'un statut 30 à 0 est possible car
+le statut 0 ne nécessite pas d'avoir une ressource ou une date de fixée pour être
+valide.
+
+Lorsque l'action est effectué, une popup s'affichera pour récapituler les actions et demander la confirmation de celles-ci.
+
+<img src="/public/assets/calendar/calendar-activitiesTab-StatusTransitionPopup.png" />
+
+Si par mégarde le statut cible est le même que le statut des activités, une pop up s'affichera pour le notifier.
+
+<img src="/public/assets/calendar/calendar-activitiesTab-StatusTransitionSameStatut.png" />
+
+## L'onglet Figeage
+
+L'onglet suivant permet de figer et de défiger des activités. Cela permet de fixer la date et ressource que le moteur a attribué à des activités.
+Cela se base sur l'allocation que le moteur a attribué à ces activités.
+
+<img src="/public/assets/calendar/calendar-activitiesTab-massFixOverview.png" />
+### Figer des activités
+
+<BR />
+Etant donné que le moteur peut continuer de faire des propositions d'allocations,
+le figeage permet dire au moteur que l'allocation actuel est satisfaisante et permet
+de la "sauvegarder". Le moteur retiendra celle-ci et ne fera plus de proposition.
+<br />
+En cliquant sur le cadenas, une popup s'affiche et fait un récapitulatif de toutes
+les actions qui seront effectuées sur les activités sélectionnées.
+<img src="/public/assets/calendar/calendar-activitiesTab-massFix.png" />
+
+Par défaut les activités passeront au statut 30 avec les dates et ressources fixées. Mais il est possible de décocher la case "Appliquer le changement sur les status". Cela ne fera que fixer les dates et ressources sans modifier le statut des activités.
+
+### Défiger des activités
+
+A l'instar de la fonction figeage, le défigeage permet de défiger les dates et ressources des activités.
+Cela permet au moteur de refaire des propositions sur les activités qui ont été défigées.
